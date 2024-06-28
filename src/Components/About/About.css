@@ -1,0 +1,90 @@
+/* About.css */
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Increased margin for better separation */
+    padding: 30px;
+    width: 100%;
+    gap: 30px;
+    background: linear-gradient(to left, #190712, #044b62);
+    /* Adjusted gradient for a professional look */
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    /* Increased margin for better spacing */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid rgba(230, 223, 223, 0.5);
+    /* Reduced opacity of border */
+    box-shadow: 0 15px 15px #ffae001a;
+    /* Softened shadow */
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+    transform: rotateY(180deg);
+}
+
+.content {
+    text-align: center;
+    margin: 0 20px;
+    width: 480px;
+}
+
+.content {
+    border-radius: 6px;
+}
+
+.content h2 {
+    font-size: 3.5rem;
+    /* Larger font size for impact */
+    margin-bottom: 20px;
+    /* Increased margin for better spacing */
+    font-family: 'Times New Roman', Times, serif;
+    color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    /* Increased font weight for emphasis */
+}
+
+.content p {
+    line-height: 1.8;
+    /* Increased line height for readability */
+    font-family: 'Arial', sans-serif;
+    color: #060354;
+    /* Darkened text color for better contrast */
+}
+
+@media (min-width: 768px) {
+    .about-section {
+        flex-direction: row;
+        /* Adjusted to row layout on larger screens */
+        justify-content: space-around;
+        /* Evenly space items horizontally */
+        align-items: center;
+        padding: 50px;
+        /* Increased padding for more spacious feel */
+    }
+    .image-wrapper {
+        margin-bottom: 0;
+    }
+    .content {
+        text-align: left;
+        /* Aligned text to the left for better readability */
+        margin: 0;
+        /* Reset margin */
+    }
+}

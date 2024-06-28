@@ -1,0 +1,60 @@
+/* Reset and Box Sizing */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Gallery */
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+
+/* Image Container */
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    /* Ensure the image completely fits its container */
+    transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05);
+}
