@@ -17,10 +17,11 @@ import img14 from '../../assets/g20.jpeg';
 import img15 from '../../assets/g21.jpeg';
 import img16 from '../../assets/g22.jpeg';
 import img17 from '../../assets/g23.jpeg';
+import img18 from '../../assets/g25.jpeg';
 
 
 function Gallery() {
-  const images = [img, img2, img3, img4, img6, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17];
+  const images = [img, img18, img3, img4, img6, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17];
 
   return (
     <div className='gallery'>

@@ -227,18 +227,18 @@ body {
     .context h1 {
         font-size: 8vw;
         /* Responsive font size */
-        margin-top: 0;
+        margin-top: 9%;
         /* Adjust margin for better visibility */
     }
     .class-list li {
         font-size: 8vw;
         /* Responsive font size */
-        margin-top: 0;
+        margin-top: 30;
         /* Adjust margin for better visibility */
     }
     .slider-container {
         flex-wrap: wrap;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
     }
     .slider-item {
         width: 45%;
@@ -251,7 +251,7 @@ body {
     .context h1 {
         font-size: 10vw;
         /* Responsive font size */
-        margin-top: 0;
+        margin-top: 430px;
         /* Adjust margin for better visibility */
     }
 }
