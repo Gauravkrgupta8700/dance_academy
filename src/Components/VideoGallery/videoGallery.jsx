@@ -9,8 +9,8 @@ const videos = [
   },
   {
     id: '2',
-    title: 'Patriotic Mashup',
-    url: 'https://www.youtube.com/embed/M937K1_aJ84?si=F0XvDZv-s3bE_aTI" title="YouTube video player'
+    title: 'Khatak dance',
+    url: 'https://www.youtube.com/embed/i9nrNfIBnJA?si=vvH3DfYH8AdJ4J4o" title="YouTube video player'
   },
   {
     id: '3',

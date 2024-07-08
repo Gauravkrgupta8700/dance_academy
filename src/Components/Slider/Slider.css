@@ -45,7 +45,7 @@ body {
 .class-list {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 15px;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -198,7 +198,7 @@ body {
     scroll-snap-align: center;
     overflow: hidden;
     border-radius: 10px;
-    background-color: #fff;
+    background: linear-gradient(to left, #2f358e, #070927);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
