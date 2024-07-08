@@ -5,7 +5,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* Increased margin for better separation */
     padding: 30px;
     width: 100%;
     gap: 30px;
@@ -16,13 +15,23 @@
 .image-wrapper {
     display: flex;
     justify-content: center;
+    width: 100%;
+    /* Ensure it takes full width */
     margin-bottom: 30px;
     /* Increased margin for better spacing */
 }
 
+.image-container {
+    max-width: 100%;
+    /* Ensure it doesn’t overflow */
+    display: flex;
+    justify-content: center;
+}
+
 .image-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
     object-fit: cover;
     border-radius: 20px;
     border: 2px solid rgba(230, 223, 223, 0.5);
@@ -39,16 +48,17 @@
 .content {
     text-align: center;
     margin: 0 20px;
-    width: 480px;
-}
-
-.content {
+    width: 100%;
+    /* Full width on small screens */
+    max-width: 480px;
+    /* Ensure it doesn’t exceed this width */
     border-radius: 6px;
 }
 
 .content h2 {
-    font-size: 3.5rem;
-    /* Larger font size for impact */
+    font-size: 2.5rem;
+    /* Responsive font size */
+    /* Adjust font size for smaller screens */
     margin-bottom: 20px;
     /* Increased margin for better spacing */
     font-family: 'Times New Roman', Times, serif;
@@ -66,7 +76,17 @@
     font-family: 'Arial', sans-serif;
     color: #060354;
     /* Darkened text color for better contrast */
+    font-size: 1rem;
+    /* Base font size */
+    margin: 0;
+    padding: 0 10px;
+    /* Padding for better text containment */
+    text-align: justify;
+    /* Justify text to prevent jagged edges */
 }
+
+
+/* Responsive Styles */
 
 @media (min-width: 768px) {
     .about-section {
@@ -86,5 +106,36 @@
         /* Aligned text to the left for better readability */
         margin: 0;
         /* Reset margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .content h2 {
+        font-size: 2rem;
+        /* Smaller font size for tablets */
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 20px;
+        /* Reduced padding on very small screens */
+    }
+    .content h2 {
+        font-size: 1.5rem;
+        /* Smaller font size for mobile */
+        /* Adjust font size for very small screens */
+    }
+    .content p {
+        font-size: 0.875rem;
+        /* Smaller font size for mobile */
+        /* Adjust font size for better readability on small screens */
+        padding: 0 5px;
+        /* Reduced padding for smaller screens */
+    }
+    .image-container img {
+        border-radius: 10px;
+        /* Smaller border radius on small screens */
     }
 }

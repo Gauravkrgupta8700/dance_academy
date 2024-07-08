@@ -14,13 +14,13 @@ const videos = [
   },
   {
     id: '3',
-    title: 'Murli Manohar',
-    url: 'https://www.youtube.com/embed/P5YkFAwBDx8'
+    title: 'Classical Dance',
+    url: 'https://www.youtube.com/embed/LwF3B--5YDc?si=vokfE9k5xfNzv9ut" title="YouTube video player'
   },
   {
     id: '4',
-    title: 'Natrang Ubha',
-    url: 'https://www.youtube.com/embed/_yYcur51ZvA?si=Yggmv9Bdmg2wuVx-'
+    title: 'Award Winning ',
+    url: 'https://www.youtube.com/embed/bJ4FGB_Jm9M?si=mnUlvACZLX2O10aL" title="YouTube video player'
   }
 ];
 
